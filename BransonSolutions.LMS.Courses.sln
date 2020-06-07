@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BransonSolutions.LMS.CourseInformation.Test", "BransonSolutions.LMS.CourseInformation.Test\BransonSolutions.LMS.CourseInformation.Test.csproj", "{9E179C1B-8B82-4153-BE40-37F6F6453B15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BransonSolutions.LMS.CourseInformation", "BransonSolutions.LMS.CourseInformation\BransonSolutions.LMS.CourseInformation.csproj", "{F86A2913-BF28-4198-975A-549D085B7D55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E179C1B-8B82-4153-BE40-37F6F6453B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E179C1B-8B82-4153-BE40-37F6F6453B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E179C1B-8B82-4153-BE40-37F6F6453B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E179C1B-8B82-4153-BE40-37F6F6453B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86A2913-BF28-4198-975A-549D085B7D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86A2913-BF28-4198-975A-549D085B7D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86A2913-BF28-4198-975A-549D085B7D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86A2913-BF28-4198-975A-549D085B7D55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29FA22D9-7E8F-49D4-B5BF-A1B403FE66CE}
+	EndGlobalSection
+EndGlobal
