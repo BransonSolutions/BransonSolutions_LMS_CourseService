@@ -7,6 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BransonSolutions.LMS.Course
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BransonSolutions.LMS.CourseInformation", "BransonSolutions.LMS.CourseInformation\BransonSolutions.LMS.CourseInformation.csproj", "{F86A2913-BF28-4198-975A-549D085B7D55}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{46088E8B-8134-4E89-88AC-4678C45E1AB8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BransonSolutions.LMS.CourseInformation.AT", "BransonSolutions.LMS.CourseInformation.AT\BransonSolutions.LMS.CourseInformation.AT.csproj", "{C214B273-54B1-4515-B338-A5FD24E52E11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{F86A2913-BF28-4198-975A-549D085B7D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F86A2913-BF28-4198-975A-549D085B7D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F86A2913-BF28-4198-975A-549D085B7D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C214B273-54B1-4515-B338-A5FD24E52E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C214B273-54B1-4515-B338-A5FD24E52E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C214B273-54B1-4515-B338-A5FD24E52E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C214B273-54B1-4515-B338-A5FD24E52E11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
