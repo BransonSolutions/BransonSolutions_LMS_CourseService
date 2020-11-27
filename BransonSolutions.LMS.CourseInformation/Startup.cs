@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Amazon.DynamoDBv2;
 using BransonSolutions.LMS.CourseInformation.Configuration;
 using BransonSolutions.LMS.CourseInformation.Data.Queries;
 using BransonSolutions.LMS.CourseInformation.Data.Repositories;
@@ -37,8 +38,7 @@ namespace BransonSolutions.LMS.CourseInformation
         {
             services.AddControllers();
 
-            // Add S3 to the ASP.NET Core dependency injection framework.
-            services.AddAWSService<Amazon.S3.IAmazonS3>();
+            services.AddAWSService<IAmazonDynamoDB>();
 
             services.AddSingleton(GetDbConfiguration());
 

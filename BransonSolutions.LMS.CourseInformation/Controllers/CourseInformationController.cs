@@ -16,20 +16,13 @@ namespace BransonSolutions.LMS.CourseInformation.Controllers
         {
             _queryService = queryService;
         }
-        // GET api/values
+
         [HttpGet]
         public IEnumerable<Course> Get()
         {
             Console.WriteLine("about to query for info");
             return _queryService.GetCourseInformation().coursesList;
         }
-
-        // GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
 
     }
 }

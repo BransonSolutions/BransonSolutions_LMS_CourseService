@@ -68,6 +68,7 @@ namespace BransonSolutions.LMS.CourseInformation.Data.Repositories
                 Course course = new Course()
                 {
                     name = item["name"].S,
+                    category = item["category"].S,
                     instructor = item["instructor"].S,
                     description = item["description"].S
                 };

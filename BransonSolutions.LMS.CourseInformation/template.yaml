@@ -1,0 +1,64 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Course retrieval API 
+
+Parameters:
+  EnvironmentName:
+    Type: String
+    Description: the environment in which this code is running
+    MinLength: '0'
+    Default: Test
+
+Resources:
+  BransonSolutionsLMSCourseInformationRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - 
+            Effect: Allow
+            Principal: 
+              Service:
+                - apigateway.amazonaws.com
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - 
+          PolicyName: root
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              -
+                Effect: Allow
+                Action:
+                  - lambda:InvokeFunctioon
+                Resource:
+                  - 
+                    !Join
+                      - ''
+                      - - 'arn:aws:lambda:us-east-1:'
+                        - !Ref 'AWS::AccountId'
+                        - ':function:BransonSolutions_LMS_Processes_DatabaseWriter'
+              -
+                Effect: Allow
+                Action:
+                  - dynamodb:Scan
+                Resource:
+                  - 
+                    !Join
+                      - ''
+                      - - 'arn:aws:dynamodb:us-east-1:'
+                        - !Ref 'AWS::AccountId'
+                        - ':table/BransonSolutions_LMS_Course'
+
+  Function:
+    MemorySize: 512
+    Timeout: 25
+    Handler: BransonSolutions.LMS.Courses::LambdaEntryPoint.FunctionHandlerAsync
+    Runtime: dotnetcore3.1
+    Environment:
+      Variables:
+        ASPNETCORE_ENVIRONMENT:
+          Ref: EnvironmentName

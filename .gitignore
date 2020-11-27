@@ -8,7 +8,7 @@ project.lock.json
 .vscode
 
 # User-specific files
-*.suo
+*.suo/
 *.user
 *.userosscache
 *.sln.docstates
